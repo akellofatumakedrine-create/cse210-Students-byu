@@ -2,8 +2,47 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    
+    static void DisplayWelcome()
     {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
+        Console.WriteLine("Welcome to the Program!");
+    }
+
+  
+    static string PromptUserName()
+    {
+        Console.Write("Please enter your name: ");
+        return Console.ReadLine();
+    }
+
+
+    static int PromptUserNumber()
+    {
+        Console.Write("Please enter your favorite number: ");
+        return int.Parse(Console.ReadLine());
+    }
+
+    
+    static int SquareNumber(int number)
+    {
+        return number * number;
+    }
+
+    // 5. Display final result
+    static void DisplayResult(string name, int squaredNumber)
+    {
+        Console.WriteLine($"{name}, the square of your number is {squaredNumber}");
+    }
+
+    // Main function
+    static void Main()
+    {
+        DisplayWelcome();
+        
+        string userName = PromptUserName();
+        int userNumber = PromptUserNumber();
+        int squared = SquareNumber(userNumber);
+        
+        DisplayResult(userName, squared);
     }
 }
