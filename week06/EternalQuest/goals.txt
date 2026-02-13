@@ -1,0 +1,4 @@
+Score:0
+SimpleGoal|Run a marathon|Complete a full marathon|1000|False
+EternalGoal|Read scriptures|Read daily scriptures|100
+ChecklistGoal|Temple attendance|Attend the temple regularly|50|0|3|500|False
